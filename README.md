@@ -70,6 +70,8 @@ Foram utilizadas algumas bibliotecas como `react-select`, que permite a criaçã
   npm start
   ```
 
+  Dentro dessa pasta existe um arquivo chamado `Explicacao_React.md` detalhando o conceito de componentes em React.
+
 ## Como Rodar
 
 1. **Python**: Navegue até a pasta onde está o arquivo `filtrar_usuarios.py` e execute o comando `python filtrar_usuarios.py`.
