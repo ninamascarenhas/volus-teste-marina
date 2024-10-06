@@ -67,7 +67,7 @@ Foram utilizadas algumas bibliotecas como `react-select`, que permite a criaçã
 - Para rodar o projeto, entre na pasta `bonus-react-app` e execute o comando:
   ```bash
   npm install
-  npm start
+  npm run dev
   ```
 
   Dentro dessa pasta existe um arquivo chamado `Explicacao_React.md` detalhando o conceito de componentes em React.
