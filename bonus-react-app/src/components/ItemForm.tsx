@@ -32,12 +32,16 @@ export default function ItemForm({
           onChange={(e) => setName(e.target.value)}
           className="border border-gray-300 p-2 rounded text-black placeholder:text-gray-500 outline-none w-1/2"
           placeholder="Nome do item"
+          maxLength={20}
         />
         <input
           type="number"
           min="1"
+          max="100"
           value={quantity}
-          onChange={(e) => setQuantity(Math.max(1, +e.target.value))}
+          onChange={(e) =>
+            setQuantity(Math.min(100, Math.max(1, +e.target.value)))
+          }
           className="border border-gray-300 p-2 rounded text-black outline-none w-1/2"
           placeholder="Quantidade"
         />

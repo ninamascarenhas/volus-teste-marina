@@ -114,7 +114,6 @@ export default function ItemList() {
                 category={item.category}
                 imageUrl={categoryImages[item.category] || "/carrinho.png"}
                 onRemove={removeItem}
-                onEdit={() => {}}
                 onMarkAsPurchased={markAsPurchased}
               />
             ))}
@@ -135,7 +134,6 @@ export default function ItemList() {
                 category={item.category}
                 imageUrl={categoryImages[item.category] || "/carrinho.png"}
                 onRemove={removePurchasedItem}
-                onEdit={() => {}}
               />
             ))}
           </div>

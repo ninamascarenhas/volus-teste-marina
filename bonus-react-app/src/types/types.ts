@@ -46,11 +46,5 @@ export interface ItemData {
     category: string;
     imageUrl: string;
     onRemove: (index: number) => void;
-    onEdit: (
-      index: number,
-      newName: string,
-      newQuantity: number,
-      newCategory: string
-    ) => void;
     onMarkAsPurchased?: (index: number) => void;
   }
