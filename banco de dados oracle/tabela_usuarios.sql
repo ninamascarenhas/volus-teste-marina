@@ -1,0 +1,79 @@
+CREATE TABLE VLS_USUARIOS (
+  CODIGO NUMBER PRIMARY KEY,
+  NOME VARCHAR2(50) NOT NULL,
+  EMAIL VARCHAR2(100) NOT NULL,
+  STATUS VARCHAR2(1) NOT NULL,
+  DATA_CADASTRO DATE NOT NULL
+);
+
+-- Aqui inseri os dados de exemplo
+INSERT INTO VLS_USUARIOS (
+  CODIGO,
+  NOME,
+  EMAIL,
+  STATUS,
+  DATA_CADASTRO
+) VALUES (
+  1,
+  'Ana Silva',
+  'ana@exemplo.com',
+  'A',
+  TO_DATE('2024-01-15', 'YYYY-MM-DD')
+);
+
+INSERT INTO VLS_USUARIOS (
+  CODIGO,
+  NOME,
+  EMAIL,
+  STATUS,
+  DATA_CADASTRO
+) VALUES (
+  2,
+  'João Souza',
+  'joao@outrodominio.com',
+  'I',
+  TO_DATE('2023-05-10', 'YYYY-MM-DD')
+);
+
+INSERT INTO VLS_USUARIOS (
+  CODIGO,
+  NOME,
+  EMAIL,
+  STATUS,
+  DATA_CADASTRO
+) VALUES (
+  3,
+  'Maria Clara',
+  'maria@exemplo.com',
+  'A',
+  TO_DATE('2024-03-20', 'YYYY-MM-DD')
+);
+
+INSERT INTO VLS_USUARIOS (
+  CODIGO,
+  NOME,
+  EMAIL,
+  STATUS,
+  DATA_CADASTRO
+) VALUES (
+  4,
+  'Carlos Andrade',
+  'carlos@exemplo.com',
+  'A',
+  TO_DATE('2024-07-11', 'YYYY-MM-DD')
+);
+
+-- Fazendo a Consulta
+SELECT
+  CODIGO,
+  NOME,
+  EMAIL,
+  STATUS,
+  DATA_CADASTRO
+FROM
+  VLS_USUARIOS
+WHERE
+  STATUS = 'A'
+  AND EXTRACT(YEAR FROM DATA_CADASTRO) = 2024
+ORDER BY
+  DATA_CADASTRO DESC;

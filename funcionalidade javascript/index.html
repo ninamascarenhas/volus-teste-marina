@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="todo-container">
+      <img src="img/list.png" alt="Lista de Tarefas" class="img-header" />
+      <h3>Lista de Tarefas</h3>
+      <div id="header">
+        <input
+          type="text"
+          id="new-task"
+          placeholder="O que você precisa fazer hoje?"
+        />
+        <button class="add-task-btn" onclick="addTask()">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="tasks-container">
+        <!-- Coluna de Tarefas Pendentes -->
+        <div id="pending-section">
+          <h4>Tarefas Pendentes</h4>
+          <p id="pending-placeholder">
+            <img src="img/list.png" alt="Tarefas Pendentes" />
+            Adicione uma nova tarefa.
+          </p>
+          <!-- Placeholder -->
+          <ul id="pending-list"></ul>
+        </div>
+
+        <!-- Coluna de Tarefas Concluídas -->
+        <div id="completed-section">
+          <h4>Tarefas Concluídas</h4>
+          <p id="completed-placeholder">
+            <img src="img/completed.png" alt="Tarefas Concluídas" />
+            Nenhuma tarefa concluída ainda.
+          </p>
+          <!-- Placeholder -->
+          <ul id="completed-list"></ul>
+          <button
+            onclick="removeAllCompleted()"
+            class="remove-all-btn"
+            style="display: none"
+          >
+            Remover Concluídas
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
