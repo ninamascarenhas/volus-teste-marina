@@ -80,6 +80,4 @@ Foram utilizadas algumas bibliotecas como `react-select`, que permite a criaçã
 
 ## Agradecimentos
 
-Foi um grande prazer desenvolver este projeto e realizar cada um dos desafios propostos.
-
-Agradeço imensamente à Vólus pela oportunidade e pelo desafio. Fiquei muito entusiasmada ao longo de todo o processo. Espero que possamos seguir adiante e construir juntos projetos incríveis!
+Foi um grande prazer desenvolver este projeto e realizar cada um dos desafios propostos. Fiquei muito entusiasmada ao longo de todo o processo!
