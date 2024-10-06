@@ -12,16 +12,16 @@ export default function ItemCard({
   onMarkAsPurchased,
 }: ItemProps) {
   return (
-    <div className="relative bg-gray-200 shadow-md rounded-lg p-4">
+    <div className="bg-gray-200 shadow-md rounded-lg p-4 flex flex-col gap-1">
       <Image
         src={imageUrl}
         alt={name}
         width={100}
         height={100}
-        className="mx-auto mb-4 object-contain rounded-xl"
+        className="mx-auto  object-contain rounded-xl items-center justify-center"
       />
       <h5 className="text-gray-600 font-semibold truncate">{name}</h5>
-      <p className="text-gray-500 text-sm mb-1">Quantidade: {quantity}</p>
+      <p className="text-gray-500 text-sm">Quantidade: {quantity}</p>
 
       <div className="flex gap-2 mt-2 items-end justify-end">
         {onMarkAsPurchased && (
