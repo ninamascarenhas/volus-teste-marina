@@ -6,7 +6,7 @@ No React, um componente é um bloco isolado e reutilizável que encapsula a lóg
 
 No projeto "Mercadinho da Vólus", utilizei a componentização para exibir itens em listas de compras e itens comprados. Para isso, criei os componentes `ItemCard`, `ItemForm` e `ItemList`, cada um com uma responsabilidade específica, tornando o código mais rápido, limpo e eficiente.
 
-- O componente `ItemCard` é responsável por exibir individualmente cada item na lista, com a possibilidade de editar, remover ou marcar como comprado.
+- O componente `ItemCard` é responsável por exibir individualmente cada item na lista, com a possibilidade de remover ou marcar como comprado.
 - O componente `ItemForm` foi criado para gerenciar o formulário de adição de novos itens, recebendo as informações e categorias disponíveis.
 - O componente `ItemList` centraliza a lógica da aplicação, exibindo tanto os itens a serem comprados quanto os já comprados, além de gerenciar as interações entre os outros dois componentes.
 

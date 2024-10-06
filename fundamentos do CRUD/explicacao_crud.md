@@ -59,5 +59,3 @@ WHERE id = 1;
 ```
 
 Ela seria aplicada, por exemplo, para permitir que um usuário apague sua conta ou um administrador exclua registros obsoletos.
-
----
