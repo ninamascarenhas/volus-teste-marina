@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${poppins.className} antialiased bg-gradient-to-r from-[#7bb65a] via-[#9cd67b] to-[#a8d48c] min-h-screen`}
       >
