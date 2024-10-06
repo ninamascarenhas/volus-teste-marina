@@ -28,6 +28,7 @@ export default function ItemCard({
           <button
             onClick={() => onMarkAsPurchased(index)}
             className="bg-green-500 text-white py-2 px-3 rounded-md hover:bg-green-600"
+            title="Comprar"
           >
             <FaCheck />
           </button>
@@ -35,6 +36,7 @@ export default function ItemCard({
         <button
           onClick={() => onRemove(index)}
           className="bg-red-500 text-white py-2 px-3 rounded-md hover:bg-red-600"
+          title="Remover"
         >
           <FaTrash />
         </button>
